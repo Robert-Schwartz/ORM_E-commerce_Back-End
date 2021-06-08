@@ -2,7 +2,8 @@ const router = require('express').Router();
 const { Category, Product } = require('../../models');
 
 
-// The `/api/categories` endpoint
+/*        The `/api/categories` endpoint
+======================================*/
 
 /* find all categories:
 include its associated Products
@@ -62,7 +63,7 @@ router.put('/:id', (req, res) => {
       id: req.params.id
     }
   })
-    .then(data=> {
+    .then(data => {
       if (!data) {
         res.status(404).json({ message: 'No Category found with this id' });
         return;
