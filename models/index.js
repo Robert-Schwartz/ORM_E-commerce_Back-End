@@ -8,7 +8,7 @@ const ProductTag = require('./ProductTag');
 // ====================================
 Product.belongsTo(Category, {
   foreignKey: "category_id",
-  onDelete: "CASCADE",
+  // onDelete: "CASCADE",
   //do we need onDelete and foreign key?
 });
 
@@ -16,7 +16,7 @@ Product.belongsTo(Category, {
 // ====================================
 Category.hasMany(Product, {
   foreignKey: "category_id",
-  onDelete: "CASCADE",
+  // onDelete: "CASCADE",
   //do we need onDelete and foreign key?
 });
 
