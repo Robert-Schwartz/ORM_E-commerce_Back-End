@@ -10,11 +10,13 @@ include its associated Products
 ======================================*/
 router.get("/", (req, res) => {
   Category.findAll({
-    include: [{
-      model: Product
-    }]
+    include: [Product]
   })
-    .then(data => res.json(data))
+    .then(data => {
+      console.log(`Data`, data)
+      return res.json(data)
+    })
+
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
@@ -29,9 +31,7 @@ router.get('/:id', (req, res) => {
     where: {
       id: req.params.id
     },
-    include: [{
-      model: Product
-    }]
+    include: [Product]
   })
     .then(data => res.json(data))
     .catch(err => {
