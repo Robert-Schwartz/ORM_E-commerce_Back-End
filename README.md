@@ -1,28 +1,60 @@
-# E-commerce Back End Starter Code
+# E-Commerce Back End
 
-# USER STORY
-## AS A manager at an internet retail company
-I want a back end for my e-commerce website that uses the latest technologies
+
+back end database routing using sequelize for an e-commerce site.
+
+
+[Video Demo](https://drive.google.com/file/d/1LioZWwppsO4iqgtcfnD5cvZPmF_cwLzZ/view)
+
+[GitHub Repo](https://github.com/Robert-Schwartz/ORM_E-commerce_Back-End)
+
+## Description
+
+AS A manager at an internet retail company
+I WANT a back end for my e-commerce website that uses the latest technologies
 SO THAT my company can compete with other e-commerce companies
 
-## Acceptance Criteria
+## Table of Contents
 
-GIVEN a functional Express.js API
+- [Technologies](#Technologies)
+- [Installation](#Installation)
+- [Usage](#usage)
+- [Contributions](#Contributions)
+- [Contact](#Contact)
+- [License](#license)
 
-* WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
-- THEN I am able to connect to a database using Sequelize
-!complete!
+## Technologies
 
-* WHEN I enter schema and seed commands
-- THEN a development database is created and is seeded with test data
-!Complete!
+This project was built using
 
-* WHEN I enter the command to invoke the application
-- THEN my server is started and the Sequelize models are synced to the MySQL database
-!complete!
+- JavaScript
+- node.js
+- express.js
+- sequelize
+- MySQL2
+- dotenv
+- Insomnia for testing
 
-* WHEN I open API GET routes in Insomnia Core for categories, products, or tags
-- THEN the data for each of these routes is displayed in a formatted JSON
+## Installation
 
-* WHEN I test API POST, PUT, and DELETE routes in Insomnia Core
-- THEN I am able to successfully create, update, and delete data in my database
+1. Install all dependencies with the command `npm i` in the integrated terminal.
+2. Run Database by running `mysql -u <username> -p` then enter password.
+3. Type `source` and then the ABSOLUTE path to the `db/schema` file.
+4. Quit MySQL in the terminal by entering `quit`.
+5. Start the Server by running `npm start`
+6. In another terminal, seed the database by running `npm run seed`
+
+## Usage
+
+Since this is a back-end application only, the route testing will require Insomnia, Postman, or similar endpoint testing programs
+
+![preview](https://drive.google.com/file/d/1LioZWwppsO4iqgtcfnD5cvZPmF_cwLzZ/view)
+
+## Contributions
+
+UofA/Trilogy
+Robert Schwartz
+
+## License
+
+N/A
