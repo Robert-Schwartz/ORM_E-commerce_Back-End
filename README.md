@@ -48,7 +48,7 @@ This project was built using
 
 Since this is a back-end application only, the route testing will require Insomnia, Postman, or similar endpoint testing programs
 
-![preview](https://drive.google.com/file/d/1LioZWwppsO4iqgtcfnD5cvZPmF_cwLzZ/view)
+![preview](preview.png)
 
 ## Contributions
 
